@@ -1,339 +1,200 @@
-body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
-	margin:0;
-	padding:0;
-	border-width:0;
-	text-rendering:optimizeSpeed;
+/* Add custom fonts */
+/* inter-100 - latin */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 100;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-100.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-300 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-300.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-200 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 200;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-200.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-regular - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-600 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-600.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-700 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-500 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-500.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-900 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 900;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-900.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  /* inter-800 - latin */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	src: url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.woff') format('woff'), /* Modern Browsers */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://office.asta-hhn.de/fonts/inter-v2-latin-800.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+   }
+
+html, body {
+   margin: 0px; 
+	padding: 0px; 
+	height: 100%; 
+   border: none;   
+font-family: 'Inter'!important;
+   }
+
+#logo-container {
+text-align: right;
 }
-div.Einfacher-Grafikrahmen {
-	border-color:#000000;
-	border-width:1px;
-	border-style:solid;
+#tagline {
+	color: #0b3650!important;
+	font-weight: 700;
 }
-div.Einfacher-Textrahmen {
-	border-style:solid;
+#logo {
+	height: 10vh;
 }
-p.ParaOverride-1 {
-	line-height:1;
-	white-space:nowrap;
+#timer {
+	text-align: center;
 }
-span.CharOverride-1 {
-	color:#0b3650;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:1800px;
-	font-style:normal;
-	font-weight:bold;
-	text-transform:uppercase;
+#status {
+	text-align: center;
+	margin-top: -10vh;
+	color: black;
+	font-size: 3vh;
 }
-span.CharOverride-2 {
-	color:#000000;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:1200px;
-	font-style:normal;
-	font-weight:normal;
+#tagline {
+	font-size: 8vh;
 }
-span.CharOverride-3 {
-	color:#000000;
-	font-family:"Minion Pro", serif;
-	font-size:240px;
-	font-style:normal;
-	font-weight:normal;
+h1 {
+	font-weight: 700!important;
+	text-align: center;
+	text-transform: uppercase;
 }
-span.CharOverride-4 {
-	color:#ffffff;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:1000px;
-	font-style:normal;
-	font-weight:normal;
+h2 {
+	font-weight: 700!important;
 }
-span.CharOverride-5 {
-	color:#ffffff;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:1400px;
-	font-style:normal;
-	font-weight:bold;
+h3 {
+	font-weight: 700!important;
+	color: #0b3650!important;
 }
-span.CharOverride-6 {
-	color:#000000;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:800px;
-	font-style:normal;
-	font-weight:bold;
+#header {
+	height: 35%;
+	text-align: center;
 }
-span.CharOverride-7 {
-	color:#0b3650;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:700px;
-	font-style:normal;
-	font-weight:bold;
+#timer {
+	height: 25%;
+	background-color: #0b3650;
 }
-span.CharOverride-8 {
-	color:#000000;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:700px;
-	font-style:normal;
-	font-weight:normal;
+#time {
+	font-size: 6vh;
+	font-weight: 700;
 }
-span.CharOverride-9 {
-	color:#000000;
-	font-family:"Myriad Pro", sans-serif;
-	font-size:600px;
-	font-style:normal;
-	font-weight:normal;
+#time-desc {
+	font-size: 3vh;
 }
-#_idContainer000 {
-	-ms-transform:translate(1645.103px,36.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1645.103px,36.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:77.77px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1645.103px,36.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1645.103px,36.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:238.90px;
+
+#footer {
+	height: 40%;
+	padding-top: 2%;
 }
-#_idContainer001 {
-	-ms-transform:translate(35.999px,118.490px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(35.999px,118.490px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:178.01px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(35.999px,118.490px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(35.999px,118.490px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:1848.00px;
+#qr {
+	height: 15vh;
 }
-#_idContainer002 {
-	-ms-transform:translate(-0.001px,344.692px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(-0.001px,344.692px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	background-image:url(../image/2.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:255.47px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(-0.001px,344.692px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(-0.001px,344.692px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:1920.00px;
-}
-#_idContainer003 {
-	-ms-transform:translate(35.999px,370.900px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(35.999px,370.900px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:62.10px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(35.999px,370.900px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(35.999px,370.900px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:1848.00px;
-}
-#_idContainer004 {
-	-ms-transform:translate(616.940px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(616.940px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:133.73px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(616.940px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(616.940px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:209.44px;
-}
-#_idContainer005 {
-	-ms-transform:translate(855.279px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(855.279px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:133.73px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(855.279px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(855.279px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:209.44px;
-}
-#_idContainer006 {
-	-ms-transform:translate(1093.618px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1093.618px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:133.73px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1093.618px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1093.618px,445.770px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:209.44px;
-}
-#_idContainer007 {
-	-ms-transform:translate(133.240px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(133.240px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:51.56px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(133.240px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(133.240px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:408.92px;
-}
-#_idContainer008 {
-	-ms-transform:translate(133.240px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(133.240px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:275.60px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(133.240px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(133.240px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:523.99px;
-}
-#_idContainer009 {
-	-ms-transform:translate(802.375px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(802.375px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:51.56px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(802.375px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(802.375px,675.799px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:518.67px;
-}
-#_idContainer010 {
-	-ms-transform:translate(802.375px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(802.375px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:80.11px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(802.375px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(802.375px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:194.42px;
-}
-#_idContainer011 {
-	-ms-transform:translate(1090.879px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1090.879px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:80.11px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1090.879px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1090.879px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:361.00px;
-}
-#_idContainer012 {
-	-ms-transform:translate(1545.967px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1545.967px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:80.11px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1545.967px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1545.967px,730.398px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:240.79px;
-}
-#_idContainer013 {
-	-ms-transform:translate(802.375px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(802.375px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:187.91px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(802.375px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(802.375px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:194.42px;
-}
-#_idContainer014 {
-	-ms-transform:translate(1174.171px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1174.171px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:187.91px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1174.171px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1174.171px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:194.42px;
-}
-#_idContainer015 {
-	-ms-transform:translate(1569.154px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(1569.154px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
-	height:187.91px;
-	left:0px;
-	position:absolute;
-	top:0px;
-	transform:translate(1569.154px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform:translate(1569.154px,817.094px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	transform-origin:0% 0%;
-	transform-origin:0% 0%;
-	width:194.42px;
-}
-img._idGenObjectAttribute-1 {
-	height:100.00%;
-	min-width:100%;
-	width:100.00%;
-}
-img._idGenObjectAttribute-2 {
-	left:0px;
-	position:absolute;
-	top:0px;
-}
-div._idGenObjectStyle-Disabled {
-	background-color:transparent;
-	border-width:0px;
+.person {
+	text-align: center;
 }
