@@ -75,43 +75,43 @@ if ($monStart == $dieStart && $monEnd == $dieEnd) {
 
 
 
-  echo "<h2>Unsere Öffnungszeiten</h2>";
+  echo "<h2>Unsere Öffnungszeiten</h2><div class='row'>";
   if ($case == 0) {
-      echo "<h3>".$days[0]."</h3>
-      ".$openStart[0] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[0] . "Uhr<br><br>
-       <h3>".$days[1]."</h3>
-      ".$openStart[1] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[1] . "Uhr<br><br>
-       <h3>".$days[2]."</h3>
-      ".$openStart[2] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[2] . "Uhr<br><br>
-       <h3>".$days[3]."</h3>
-      ".$openStart[3] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[3] . "Uhr<br><br>";
+      echo "<div class='col'><h3>".$days[0]."</h3>
+      ".$openStart[0] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[0] . " Uhr</div>
+       <div class='col'><h3>".$days[1]."</h3>
+      ".$openStart[1] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[1] . " Uhr</div></div><div class='row'>
+       <div class='col'><h3>".$days[2]."</h3>
+      ".$openStart[2] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[2] . " Uhr</div>
+       <div class='col'><h3>".$days[3]."</h3>
+      ".$openStart[3] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[3] . " Uhr</div></div><div class='row'>";
   } elseif ($case == 1) {
-    echo "<h3>".$days[0]."</h3>
-      ".$openStart[0] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[0] . "Uhr<br><br>
-       <h3>".$days[1]."</h3>
-      ".$openStart[1] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[1] . "Uhr<br><br>
-       <h3>".$days[2]."</h3>
-      ".$openStart[2] ." - " . $brStart . "Uhr<br>
-       ".$brEnd ." - " . $openEnd[2] . "Uhr<br><br>";
+    echo "<div class='col'><h3>".$days[0]."</h3>
+      ".$openStart[0] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[0] . " Uhr</div>
+       <div class='col'><h3>".$days[1]."</h3>
+      ".$openStart[1] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[1] . " Uhr</div></div><div class='row'>
+       <div class='col'><h3>".$days[2]."</h3>
+      ".$openStart[2] ." - " . $brStart . " Uhr<br>
+       ".$brEnd ." - " . $openEnd[2] . " Uhr</div>";
   } elseif ($case == 2) {
-    echo "<h3>".$days[0]."</h3>
-    ".$openStart[0] ." - " . $brStart . "Uhr<br>
-     ".$brEnd ." - " . $openEnd[0] . "Uhr<br><br>
-     <h3>".$days[1]."</h3>
-    ".$openStart[1] ." - " . $brStart . "Uhr<br>
-     ".$brEnd ." - " . $openEnd[1] . "Uhr<br><br>
+    echo "<div class='col'><h3>".$days[0]."</h3>
+    ".$openStart[0] ." - " . $brStart . " Uhr<br>
+     ".$brEnd ." - " . $openEnd[0] . " Uhr
+     <div class='col'><h3>".$days[1]."</h3>
+    ".$openStart[1] ." - " . $brStart . " Uhr<br>
+     ".$brEnd ." - " . $openEnd[1] . " Uhr</div></div><div class='row'>
      ";
   } elseif ($case == 3) {
-    echo "<h3>".$days[0]."</h3>
-    ".$openStart[0] ." - " . $brStart . "Uhr<br>
-     ".$brEnd ." - " . $openEnd[0] . "Uhr<br><br>";
+    echo "<div class='col'><h3>".$days[0]."</h3>
+    ".$openStart[0] ." - " . $brStart . " Uhr<br>
+     ".$brEnd ." - " . $openEnd[0] . " Uhr</div></div><div class='col'>";
   }
         
-  echo " <h3>Freitag</h3>
-  ".$frStart ." - " . $frEnd . "Uhr";
+  echo " <div class='col'><h3>Freitag</h3>
+  ".$frStart ." - " . $frEnd . " Uhr</div></div>";

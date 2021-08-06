@@ -40,10 +40,7 @@ require("status.php");
 	<div class="container" id="footer">
 		<div class="row">
 			<div class="col-md-4" id="hours">
-				<h2>Unsere Öffnungszeiten</h2>
-				<h3>Montag - Donnerstag</h3>
-				9:00 - 12:00 Uhr<br>
-				13:00 - 14:30 Uhr<br>
+				
 				
 			</div>
 			<div class="col-md-8">
